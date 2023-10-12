@@ -49,8 +49,8 @@ class NaiveBayesClassifier(classificationMethod.ClassificationMethod):
     To get the list of all possible features or labels, use self.features and 
     self.legalLabels.
     """
-
-    "*** from collections import Counter
+ 
+    from collections import Counter
 import math
 
 class NaiveBayes:
@@ -89,7 +89,7 @@ class NaiveBayes:
                     class_scores[label] += self.class_word_probabilities[label][word]
             results.append(max(class_scores, key=class_scores.get))
         return results
- ***"
+
     util.raiseNotDefined()
         
   def classify(self, testData):
